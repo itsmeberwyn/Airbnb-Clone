@@ -59,7 +59,6 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  console.log("kamtoe");
   const exploreData = await fetch("https://links.papareact.com/pyp").then(
     (res) => res.json()
   );
